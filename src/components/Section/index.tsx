@@ -1,18 +1,20 @@
-import React, { forwardRef } from 'react'
+/* eslint-disable prettier/prettier */
+import React, {  forwardRef } from 'react'
 import * as S from './styles'
 type SectionProps = {
   id?: string
   children?: React.ReactNode
 }
-const Section: React.ForwardRefRenderFunction<HTMLHeadingElement, SectionProps> = ({
-  id,
-  children
-}) => {
+
+const Section = forwardRef<HTMLHeadingElement, SectionProps>(({ id, children }, ref) => {
   return (
-    <S.Box id={id} className="componente">
+    <S.Box id={id} className="componente" ref={ref}>
       {children}
     </S.Box>
   )
-}
+})
 
-export default forwardRef(Section)
+Section.displayName = 'Section'
+
+export default Section
+
