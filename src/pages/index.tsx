@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useEffect } from 'react'
 import styled, { css } from 'styled-components'
 import { gsap } from 'gsap'

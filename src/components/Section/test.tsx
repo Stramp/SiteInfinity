@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { renderWithTheme } from 'utils/tests/helpers'
 
 import Section from '.'

@@ -1,5 +1,6 @@
-import { ThemeProvider } from 'styled-components'
-import { render, RenderResult } from '@testing-library/react'
+/* eslint-disable prettier/prettier */
+import {  ThemeProvider } from 'styled-components'
+import {  render,  RenderResult } from '@testing-library/react'
 
 import theme from 'styles/theme'
 import React from 'react'
