@@ -4,11 +4,11 @@ export const Box = styled.section`
   ${({ theme, id }) => css`
     width: 100vw;
     height: ${id === 'teste' ? '100vh' : '100vh'};
-    background-color: ${id === 'teste' ? theme.colors.black : 'blue'};
-    color: ${theme.colors.white};
+    background-color: ${theme.colors.mainBg};
+    color: ${theme.colors.primary};
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid white;
+    border-right: 3px solid black;
   `}
 `
