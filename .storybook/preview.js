@@ -1,17 +1,21 @@
-import { addDecorator } from '@storybook/react'
-import { withNextRouter } from 'storybook-addon-next-router'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'styles/global'
 import theme from 'styles/theme'
-
-addDecorator(withNextRouter())
+import { RouterContext } from 'next/dist/shared/lib/router-context'
 
 export const decorators = [
-  (Story) => (
+  Story => (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Story />
     </ThemeProvider>
   )
 ]
-export const parameters = { layout: 'fullscreen' }
+export const parameters = {
+  layout: 'fullscreen',
+  nextRouter: {
+    Provider: RouterContext.Provider,
+  }
+}
+
+
