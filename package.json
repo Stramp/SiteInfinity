@@ -12,7 +12,7 @@
     "test": "jest --maxWorkers=50%",
     "test:wt": "jest --watch --maxWorkers=25%",
     "test:ci": "jest --runInBand",
-    "storybook": "start-storybook -s ./public -p 6006",
+    "storybook": "set NODE_OPTIONS=--openssl-legacy-provider & start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
     "postinstall": "husky install"
   },
