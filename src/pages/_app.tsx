@@ -2,11 +2,13 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from 'styles/global'
-import theme from 'styles/theme'
+import { light, darken } from 'styles/themes'
 
 function App({ Component, pageProps }: AppProps) {
+  const n = true
+  const t = n ? light : darken
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={t}>
       <Head>
         <title>Boilerplate</title>
         <link rel="shortcut icon" href="/favicon.ico" />

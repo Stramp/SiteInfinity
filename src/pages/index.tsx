@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 import Section from 'components/Section'
-import Svg1 from 'components/svgs/Svg1'
+import Logo from 'components/Logo'
 
 gsap.registerPlugin(ScrollTrigger)
 export const Box = styled.div`
@@ -13,7 +13,6 @@ export const Box = styled.div`
     display: flex;
     width: 500vw;
     block-size: fit-content;
-
     align-items: center;
     justify-content: center;
   `}
@@ -42,7 +41,7 @@ export default function Home() {
   return (
     <Box id="container">
       <Section>
-        <Svg1/>
+        <Logo version='hall1'/>
       </Section>
       <Section />
       <Section />
