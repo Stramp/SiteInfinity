@@ -1,11 +1,11 @@
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'styles/global'
-import theme from 'styles/theme'
+import { light, darken } from 'styles/themes'
 import { RouterContext } from 'next/dist/shared/lib/router-context'
 
 export const decorators = [
   Story => (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={light}>
       <GlobalStyles />
       <Story />
     </ThemeProvider>

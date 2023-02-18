@@ -1,10 +1,10 @@
 import { renderWithTheme } from 'utils/tests/helpers'
 
-import Svg1 from '.'
+import Logo from '.'
 
-describe('<Svg1 />', () => {
+describe('<Logo />', () => {
   it('should render element', () => {
-    const { container } = renderWithTheme(<Svg1 />)
+    const { container } = renderWithTheme(<Logo />)
 
     expect(container.firstChild).toBeInTheDocument()
   })
