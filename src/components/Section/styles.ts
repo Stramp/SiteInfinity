@@ -4,7 +4,7 @@ export const Box = styled.section`
   ${({ theme, id }) => css`
     width: 100vw;
     height: ${id === 'teste' ? '100vh' : '100vh'};
-    background-color: ${theme.colors.mainBg};
+    background-color: ${theme.colors.bg};
     color: ${theme.colors.primary};
     display: flex;
     align-items: center;
