@@ -8,6 +8,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ---
 
+### [0.1.5] 2023-02-19
+
+#### Feat [issue-17](https://github.com/Stramp/SiteInfinity/issues/17)
+
+- Implementado componente midias sociais
+
+---
 ### [0.1.4] 2023-02-19
 
 #### Feat [issue-39](https://github.com/Stramp/SiteInfinity/issues/39)
