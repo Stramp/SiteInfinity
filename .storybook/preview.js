@@ -1,11 +1,11 @@
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'styles/global'
-import { light, darken } from 'styles/themes'
+import theme from 'styles/theme'
 import { RouterContext } from 'next/dist/shared/lib/router-context'
 
 export const decorators = [
   Story => (
-    <ThemeProvider theme={light}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Story />
     </ThemeProvider>
@@ -14,8 +14,6 @@ export const decorators = [
 export const parameters = {
   layout: 'fullscreen',
   nextRouter: {
-    Provider: RouterContext.Provider,
+    Provider: RouterContext.Provider
   }
 }
-
-

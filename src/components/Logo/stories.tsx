@@ -12,7 +12,6 @@ export default {
   }
 } as Meta
 
-export const Default: Story<LogoProps> = args => <Logo {...args} />
 export const Hall1: Story<LogoProps> = () => <Logo version={'hall1'} />
 export const Hall2: Story<LogoProps> = () => <Logo version={'hall2'} />
 export const Full: Story<LogoProps> = () => <Logo version={'full'} />

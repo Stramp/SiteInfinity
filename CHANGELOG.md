@@ -8,6 +8,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ---
 
+### [0.1.3] 2023-02-19
+
+#### Feat [issue-8](https://github.com/Stramp/SiteInfinity/issues/8)
+
+- Implementado BOTAO todas versoes
+
+---
 ### [0.1.2] 2023-02-18
 
 #### Feat [issue-4](https://github.com/Stramp/SiteInfinity/issues/4)
