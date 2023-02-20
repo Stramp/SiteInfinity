@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 import Section from 'components/Section'
 import Logo from 'components/Logo'
+import BgHall from 'components/BgHall'
 
 gsap.registerPlugin(ScrollTrigger)
 export const Box = styled.div`
@@ -41,7 +42,9 @@ export default function Home() {
   return (
     <Box id="container">
       <Section>
-        <Logo version='hall1'/>
+        <BgHall>
+          <Logo version="hall1" />
+        </BgHall>
       </Section>
       <Section />
       <Section />
