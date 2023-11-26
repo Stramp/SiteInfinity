@@ -32,7 +32,7 @@ jobs:
         run: yarn install
 
       - name: Linting
-        run: yarn lint --max-warnings=1000
+        run: yarn lint
 
       - name: Test
         run: yarn test:ci
